@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    font-family: 'Rubik';
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-list ul {
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-list ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-list ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.left-navbar {
+    display: flex;
+}
+
+.logo {
+    margin: 20px;
+
+}
+
+button {
+    padding: 0 10px;
+    margin: 20px;
+    width: 200px;
+    height: 80px;
+    background-color: #F15B43;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    color: white;
+}
+
+.brief {
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+.brief h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.brief p {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* .brief button,
+.right-section-2 button,
+.about-us button {
+    width: 200px;
+    height: 80px;
+    background-color: #F15B43;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    margin: 10px;
+} */
+
+.backGround-img {
+    background-image: url(img/h1_hero1.jpg.webp);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    padding-bottom: 200px;
+    /* background-position: right; */
+    /* object-position: bottom; */
+    /* width: 100%; */
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-list ul li a:hover {
+    cursor: pointer;
+    color: #65C9BB;
+}
+
+.right-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars  {
+    /* justify-self: center end; */
+    /* align-self: center; */
+    font-size: 20px;
+    display: none;
+}
+
+.logo a img:hover {
+    cursor: pointer;
+}
+
+.section-2 {
+    display: flex;
+    background-color: #FCF2EB;
+    padding: 70px 0px;
+
+}
+
+.left-section-2 {
+    width: 50%;
+
+}
+
+.right-section-2 {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.left-section-2 img {
+    padding: 0px 50px;
+    /* width: 100%; */
+}
+
+.right-section-2 p:nth-child(1),
+.left-about-us p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+    color: #65c9bb;
+    padding: 10px;
+}
+
+.right-section-2 h1,
+.left-about-us h1,
+.item1-info h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #263B5C;
+    margin: 20px;
+
+}
+
+.right-section-2 p:nth-child(3),
+.left-about-us p:nth-child(3),
+.item1-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777777;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    display: flex;
+    background-color: white;
+    padding: 70px 70px;
+}
+
+.left-about-us {
+    width: 40%;
+    padding-top: 50px;
+}
+
+.right-about-us {
+    width: 60%;
+    margin-left: 20px;
+}
+
+/* .right-about-us img {
+    width: 100%;
+
+} */
+
+.section-3 {
+    display: flex;
+    gap: 30px;
+}
+
+.item1,
+.item2,
+.item3 {
+    width: 100%
+}
+
+.section-3 h1 {
+    font-size: 28px;
+}
+
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/section-bg1.jpg.webp);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.top-content {
+    margin-bottom: 20px;
+}
+
+.top-content h1 {
+    margin: 10px;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap:wrap ;
+}
+
+.bottom-content img {
+    width: 50%;
+}
+
+.bottom-content h1,
+p {
+    margin: 10px;
+}
+
+.bottom-content h1 {
+    line-height: 30px;
+}
+
+.facility-1,
+.facility-2,
+.facility-3 {
+    width: 20%;
+}
+
+.footer {
+    text-align: center;
+    background-color: #263B5C;
+    padding: 30px;
+}
+
+
+@media (max-width:700px) {
+    .nav-list {
+        display: none;
+    }
+
+    .fa-bars  {
+        /* justify-self: center end; */
+        /* align-self: center; */
+        font-size: 20px;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .backGround-img {
+        background-position: center;
+        width: 100%;
+    }
+
+    .left-section-2,
+    .right-section-2,
+    .left-about-us,
+    .right-about-us {
+        width: 100%;
+    }
+
+    .section-2,
+    .about-us,
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .Donation-btn {
+        display: none;
+
+    }
+
+    .brief {
+        margin: 0 10px;
+        /* padding: 20px; */
+    }
+
+    img {
+        width: 100%;
+    }
+    .bottom-content{
+        flex-wrap: wrap;
+    }
+}
+
+.Donation-btn {
+    position: relative;
+}
+
+.Donation-btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+}
+
